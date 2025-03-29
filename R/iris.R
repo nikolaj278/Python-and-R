@@ -2,6 +2,5 @@ library(tidyverse)
 
 
 iris %>% 
-  ggplot() +
-  geom_jitter(aes(Sepal.Length, Sepal.Width, col = Species)) +
-  geom_column(aes())
+  ggplot(aes(Sepal.Length, fill = Species)) +
+  geom_bar(alpha = 0.3)
